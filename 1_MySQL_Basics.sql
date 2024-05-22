@@ -172,6 +172,9 @@
         3. System Variable
 */
 
-
+ -- 5.1 User-Defined Variable:
+     -- MySQL provides a SET and SELECT statement to declare and initialize a variable. The user-defined variable name starts with @ symbol.
+     SET @name='Anil';  
+     SELECT @name; 
 
 
