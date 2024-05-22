@@ -176,5 +176,8 @@
      -- MySQL provides a SET and SELECT statement to declare and initialize a variable. The user-defined variable name starts with @ symbol.
      SET @name='Anil';  
      SELECT @name; 
-
+     
+ -- 5.2 Local Variable:
+     -- MySQL uses the DECLARE keyword to specify the local variable. The DECLARE statement also combines a DEFAULT clause to provide a default value to a variable.
+     DECLARE PI float(1,2) DEFAULT 3.14;
 
