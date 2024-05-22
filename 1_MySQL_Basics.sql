@@ -161,6 +161,17 @@
 
 */
 
- 
+-- [5] MySQL Variables : 
+/*
+    Variables are used for storing data or information during the execution of a program. It is a way of labeling data with an appropriate name that helps to understand the program more clearly by the reader.
+
+    MySQL can use variables in three different ways, which are given below:
+
+        1. User-Defined Variable
+        2. Local Variable
+        3. System Variable
+*/
+
+
 
 
