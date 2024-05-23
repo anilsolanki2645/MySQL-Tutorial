@@ -88,3 +88,13 @@ Select user();
 Select current_user();
 
 SELECT user, host, db, command FROM information_schema.processlist;
+
+-- -------------------------------- [7] Change User Passwords -------------------------------------
+
+UPDATE user SET password = PASSWORD('demouser123') WHERE user = 'demouser' AND host = 'localhost';  
+
+UPDATE user SET authentication_string = PASSWORD('demouser123') WHERE user = 'demouser' AND host = 'localhost';  
+
+SET PASSWORD FOR 'demouser' = PASSWORD('demouser123');  
+
+ALTER USER demouser IDENTIFIED BY 'demouser123';  
