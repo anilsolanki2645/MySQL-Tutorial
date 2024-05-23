@@ -59,3 +59,15 @@ REVOKE PROXY ON 'user'@'hostname' FROM 'proxied_user'@'proxied_hostname';
                     SELECT: It enables the user account to read a database.
                     UPDATE: It enables the user account to update table rows.
 */
+
+-- -------------------------------- [4] Create User -------------------------------------
+
+-- 4.1 Show all MySQL User
+select user from mysql.user;  
+
+-- 4.2 Create user with if not exists
+CREATE USER IF NOT EXISTS demouser IDENTIFIED BY 'demouser123';  
+
+-- 4.3 Extra Command
+FLUSH PRIVILEGES;  
+SHOW GRANTS for demouser123;  
