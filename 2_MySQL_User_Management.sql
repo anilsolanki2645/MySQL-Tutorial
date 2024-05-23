@@ -76,3 +76,15 @@ SHOW GRANTS for demouser123;
 
 -- 5.1 Drop MySQL User
 drop user demouser;
+
+-- -------------------------------- [6] Show User -------------------------------------
+
+DESC mysql.user;
+
+SELECT user, host, account_locked, password_expired FROM mysql.user;
+
+Select user();
+
+Select current_user();
+
+SELECT user, host, db, command FROM information_schema.processlist;
