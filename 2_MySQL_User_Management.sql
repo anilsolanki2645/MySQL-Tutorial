@@ -71,3 +71,8 @@ CREATE USER IF NOT EXISTS demouser IDENTIFIED BY 'demouser123';
 -- 4.3 Extra Command
 FLUSH PRIVILEGES;  
 SHOW GRANTS for demouser123;  
+
+-- -------------------------------- [5] Drop User -------------------------------------
+
+-- 5.1 Drop MySQL User
+drop user demouser;
