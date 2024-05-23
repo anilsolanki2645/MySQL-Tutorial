@@ -46,6 +46,16 @@ REVOKE SELECT, INSERT, UPDATE ON database_name.table_name FROM 'user'@'hostname'
 -- 2.5 Revoke Privileges with GRANT OPTION:
 REVOKE SELECT ON database_name.* FROM 'user'@'hostname' GRANT OPTION;
 
--- 2.6 Revoke Proxy Privileges:
+-- 2.6 Revoke Proxy Privileges: 
 REVOKE PROXY ON 'user'@'hostname' FROM 'proxied_user'@'proxied_hostname';
 
+-- -------------------------------- [3] All Permissions list -------------------------------------
+/*
+                    ALL PRIVILEGES: It permits all privileges to a new user account.
+                    CREATE: It enables the user account to create databases and tables.
+                    DROP: It enables the user account to drop databases and tables.
+                    DELETE: It enables the user account to delete rows from a specific table.
+                    INSERT: It enables the user account to insert rows into a specific table.
+                    SELECT: It enables the user account to read a database.
+                    UPDATE: It enables the user account to update table rows.
+*/
