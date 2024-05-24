@@ -13,3 +13,8 @@
 -- [3] Select Databases:
 
     USE EDURATE;
+
+-- [4] Show Databases:
+
+    SHOW DATABASES;
+    SHOW SCHEMAS;
