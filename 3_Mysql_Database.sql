@@ -30,3 +30,7 @@
 -- [6] Copy or Database Baackup;
 
     mysqldump -u root -p SOCIAL > D:\Database_backup\SOCIAL.sql
+
+-- [7] Load .sql Database in MySQL
+
+    mysql -u root -p EDU < D:\Database_backup\SOCIAL.sql 
