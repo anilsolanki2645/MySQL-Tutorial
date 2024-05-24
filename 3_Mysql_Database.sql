@@ -5,6 +5,7 @@
 -- [1] Create New Database:
 
     CREATE DATABASE EDURATE;
+    CREATE DATABASE EDU;
 
 -- [2] Create New Database WITH IF NOT EXISTS : 
 
@@ -25,3 +26,7 @@
     DROP DATABASE IF EXISTS EDURATE;
     DROP SCHEMA EDURATE;
     DROP SCHEMA IF EXISTS EDURATE;
+
+-- [6] Copy or Database Baackup;
+
+    mysqldump -u root -p SOCIAL > D:\Database_backup\SOCIAL.sql
