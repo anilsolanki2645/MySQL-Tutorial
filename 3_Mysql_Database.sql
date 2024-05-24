@@ -10,3 +10,6 @@
 
     CREATE DATABASE IF NOT EXISTS EDURATE;
 
+-- [3] Select Databases:
+
+    USE EDURATE;
