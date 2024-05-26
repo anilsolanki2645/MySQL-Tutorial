@@ -92,3 +92,38 @@ INSERT INTO DEMO_LOC (LOC_ID, ZIP, AREA) VALUES
 (24, 110024, 'Lajpat Nagar'),
 (25, 110025, 'Defence Colony');
 
+-- -------------------------------- [2] ALTER TABLE COMMAND -------------------------------------
+
+-- -------------------------------- (2.1) ADD COLUMN -----------------------------------
+
+-- 2.1.1 Add New Column With Default Constraints
+ALTER TABLE DEMO
+ADD COLUMN LOCATION VARCHAR(20) DEFAULT 'INDIA';
+
+-- 2.1.2 Add New Column With Default Constraints
+ALTER TABLE DEMO
+ADD COLUMN EMP_NO INT UNIQUE;
+
+-- 2.1.3 Add new columns LOC_ID and add constraints Foreign Key in Demo Table
+ALTER TABLE DEMO
+ADD COLUMN LOC_ID INT,
+ADD FOREIGN KEY (LOC_ID) REFERENCES DEMO_LOC (LOC_ID);
+
+-- 2.1.4 Update LOC_ID in demo table for join
+
+UPDATE DEMO
+SET LOC_ID = (SELECT LOC_ID FROM DEMO_LOC WHERE DEMO.D_ID = DEMO_LOC.LOC_ID);
+
+SELECT * FROM DEMO
+    JOIN DEMO_LOC
+    ON DEMO.LOC_ID = DEMO_LOC.LOC_ID;
+
+-- 2.1.5 Add some columns for Perform Remove Operation in DEMO_LOC
+ALTER TABLE DEMO_LOC
+    ADD COLUMN DEMO_TEMP_1 VARCHAR(20) UNIQUE;
+
+ALTER TABLE DEMO_LOC
+    ADD COLUMN DEMO_TEMP_2 VARCHAR(20);
+
+-- Note : For Other Constrints it's already used in first DEMO table
+
