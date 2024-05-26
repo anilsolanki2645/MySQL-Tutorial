@@ -127,3 +127,30 @@ ALTER TABLE DEMO_LOC
 
 -- Note : For Other Constrints it's already used in first DEMO table
 
+-- -------------------------------- (2.2) Remove COLUMN-----------------------------------
+
+-- 2.2.1 Remove DEMO_TEMP_2 Columns from DEMO_LOC TABLE
+ALTER TABLE DEMO_LOC
+    DROP COLUMN DEMO_TEMP_2;
+
+-- 2.2.2 Remove Column Constraints: (Remove Unique Constraints)
+ALTER TABLE DEMO_LOC
+DROP INDEX DEMO_TEMP_1;
+
+-- -------------------------------- (2.3) Modify -----------------------------------
+
+-- 2.3.1 Modify Column Data Type
+ALTER TABLE DEMO_LOC
+MODIFY COLUMN DEMO_TEMP_1 INT;
+
+-- 2.3.2 Modify Column Length AND Data Type
+ALTER TABLE DEMO_LOC
+MODIFY COLUMN DEMO_TEMP_1 VARCHAR(30);
+
+-- 2.3.3 Modify Column Constraints:
+ALTER TABLE DEMO_LOC
+MODIFY COLUMN DEMO_TEMP_1 INT UNIQUE;
+
+-- 2.3.4 Modify Column Constraints: (Remove Unique Constraints)
+ALTER TABLE DEMO_LOC
+DROP INDEX DEMO_TEMP_1;
