@@ -224,3 +224,13 @@ INSERT DUM SELECT * FROM USERS;
 
 -- 10.1 REPAIR TABLE
 REPAIR TABLE USERS;
+
+-- -------------------------------- [11] Rename Column -------------------------------------
+
+-- 11.1 Rename Column Using CHANGE Command
+ALTER TABLE USERS 
+CHANGE COLUMN password PASS VARCHAR(20);  
+
+-- 11.2 Rename Column Using RENAME Command
+ALTER TABLE USERS 
+RENAME COLUMN email TO U_EMAIL;  
