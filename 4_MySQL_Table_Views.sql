@@ -234,3 +234,32 @@ CHANGE COLUMN password PASS VARCHAR(20);
 -- 11.2 Rename Column Using RENAME Command
 ALTER TABLE USERS 
 RENAME COLUMN email TO U_EMAIL;  
+
+-- -------------------------------- [12] Table Locking -------------------------------------
+
+CREATE TABLE info_table (   
+    Id INT NOT NULL AUTO_INCREMENT,   
+    Name VARCHAR(50) NOT NULL,   
+    Message VARCHAR(80) NOT NULL,  
+    PRIMARY KEY (Id)   
+);  
+
+INSERT INTO info_table (name, message)   
+VALUES('Peter', 'Hi'),  
+('Joseph', 'Hello'),  
+('Mark', 'Welcome');  
+
+SELECT * FROM info_table;  
+
+LOCK TABLE info_table READ;  
+
+-- GETTING A ERROR
+INSERT INTO info_table (name, message)   
+VALUES ('Suzi', 'Hi');   
+
+LOCK TABLE info_table WRITE;  
+
+INSERT INTO info_table (name, message)   
+VALUES ('Suzi', 'Hi'); 
+
+ UNLOCK TABLES;
