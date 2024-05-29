@@ -24,6 +24,14 @@
         5. Give too much power to user.
 */
 
+-- [4] Disadvantages of Store Procedures
+/*      1. Resource usage
+        2. Troubleshooting 
+        3. Maintenances 
+        4. Store Procedure are slove because take more time to execute insted of simple Queries.
+        5. Give too much power to user.
+*/
+
 
 
 
