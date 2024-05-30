@@ -82,7 +82,20 @@
         
         -- Stored procedures can have input parameters that allow you to pass values into the procedure at runtime.
 
+-- 8.1 Stored Procedure with an IN Parameter:
 
+        DELIMITER //
+        
+        DROP PROCEDURE IF EXISTS GetRecordsById;
+        CREATE PROCEDURE GetRecordsById(IN record_id INT)
+        BEGIN
+            SELECT * FROM TEMP_DB.DEMO WHERE D_ID = record_id;
+        END //
+
+        DELIMITER ;
+
+        --  you can call it using the CALL statement:
+        CALL GetRecordsById(3);
 
 
 
