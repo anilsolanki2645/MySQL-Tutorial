@@ -118,7 +118,26 @@
         -- Final Output
         SELECT @total;
 
+-- 8.3 Stored Procedure with an INOUT Parameter:
 
+        DELIMITER //
+
+        DROP PROCEDURE IF EXISTS UpdateValue;
+        CREATE PROCEDURE UpdateValue(INOUT value INT)
+        BEGIN
+            SET value = value * 2;
+        END //
+
+        DELIMITER ;
+
+        -- Set or assign variable value
+        SET @value = 5;
+
+        -- call the procedure
+        CALL UpdateValue(@value);
+
+        -- Final Output
+        SELECT @value;
 
 
 
