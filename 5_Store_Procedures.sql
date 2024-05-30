@@ -97,6 +97,28 @@
         --  you can call it using the CALL statement:
         CALL GetRecordsById(3);
 
+-- 8.2 Stored Procedure with an OUT Parameter:
+
+        DELIMITER //
+
+        DROP PROCEDURE IF EXISTS GetRecordCount;
+        CREATE PROCEDURE GetRecordCount(OUT total_records INT)
+        BEGIN
+            SELECT COUNT(*) INTO total_records FROM TEMP_DB.DEMO;
+        END //
+
+        DELIMITER ;
+
+        -- Set or assign variable value
+        SET @total = 2;
+
+        -- call the procedure
+        CALL GetRecordCount(@total);
+
+        -- Final Output
+        SELECT @total;
+
+
 
 
 
