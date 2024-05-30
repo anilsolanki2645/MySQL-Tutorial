@@ -52,6 +52,32 @@
         END
 */
 
+-- [7] stored procedure without a parameter:
+/*      
+        DELIMITER //: Changes the statement delimiter to //. This allows the use of semicolons within the procedure body without ending the procedure definition prematurely.
+
+        CREATE PROCEDURE GetDemoRecords(): Defines a new stored procedure named GetDemoRecords without any parameters.
+
+        BEGIN ... END: Encloses the procedure's body. This is where the SQL statements to be executed are placed.
+
+        SELECT * FROM TEMP_DB.DEMO LIMIT 5;: The SQL statement that selects the first five records from the DEMO table in the TEMP_DB database.
+
+        DELIMITER ;: Resets the statement delimiter back to ; after the procedure definition is complete.
+*/
+
+        DELIMITER //
+
+        DROP PROCEDURE IF EXISTS GetDemoRecords;
+        CREATE PROCEDURE GetDemoRecords()
+        BEGIN
+            SELECT * FROM TEMP_DB.DEMO LIMIT 5;
+        END //
+
+        DELIMITER ;
+
+        --  you can call it using the CALL statement:
+        CALL GetDemoRecords();
+
 
 
 
