@@ -78,6 +78,10 @@
         --  you can call it using the CALL statement:
         CALL GetDemoRecords();
 
+-- [8] Stored Procedure with a Parameter:
+        
+        -- Stored procedures can have input parameters that allow you to pass values into the procedure at runtime.
+
 
 
 
