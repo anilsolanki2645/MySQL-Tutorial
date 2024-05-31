@@ -182,4 +182,14 @@
         -- calling the procedure
         CALL VariableExampleProcedure();
 
+-- [10] stored procedures in MySQL that use the SELECT, INSERT, UPDATE, and DELETE statements.
+
+-- 10.1 Example Table Structure:
+        
+        CREATE TABLE IF NOT EXISTS TEMP_DB.DEMO2 (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(100),
+            value INT
+        );
+
 
