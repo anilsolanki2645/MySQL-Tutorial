@@ -139,5 +139,15 @@
         -- Final Output
         SELECT @value;
 
+-- [9] Session Variables and Local Variables in a Stored Procedure:
+
+/*
+        9.1. Local Variable (local_var):
+
+            - Declared with the DECLARE statement.
+            - Local to the procedure and exists only within the block of code where it is declared.
+            - Initialized with a default value of 10.
+
+
 
 
