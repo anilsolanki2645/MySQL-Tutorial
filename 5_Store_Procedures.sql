@@ -148,6 +148,12 @@
             - Local to the procedure and exists only within the block of code where it is declared.
             - Initialized with a default value of 10.
 
+        9.2. Session Variable (@session_var):
+
+            - Prefixed with @.
+            - Exists for the duration of the session and can be accessed across different procedures or queries within the same session.
+            - Initialized with a value of 20.
+
 
 
 
