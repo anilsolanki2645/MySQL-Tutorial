@@ -154,6 +154,9 @@
             - Exists for the duration of the session and can be accessed across different procedures or queries within the same session.
             - Initialized with a value of 20.
 
+        9.3. Using Local Variable to Update Session Variable:
 
+            - The session variable @session_var is updated by adding the value of the local variable local_var.
+*/
 
 
