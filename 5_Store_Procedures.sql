@@ -159,4 +159,27 @@
             - The session variable @session_var is updated by adding the value of the local variable local_var.
 */
 
+        DELIMITER //
+
+        DROP PROCEDURE IF EXISTS VariableExampleProcedure;
+        CREATE PROCEDURE VariableExampleProcedure()
+        BEGIN
+            -- Local Variable
+            DECLARE local_var INT DEFAULT 10;
+
+            -- Session Variable
+            SET @session_var = 20;
+
+            -- Update the session variable using the local variable
+            SET @session_var = @session_var + local_var;
+
+            -- Select the variables to see their values
+            SELECT local_var AS LocalVariable, @session_var AS SessionVariable;
+        END //
+
+        DELIMITER ;
+
+        -- calling the procedure
+        CALL VariableExampleProcedure();
+
 
