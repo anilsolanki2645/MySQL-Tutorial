@@ -239,3 +239,18 @@
 
         -- Calling the procedure
         CALL DeleteDemoRecord(2);
+
+-- 10.5 Stored Procedure with SELECT:
+    
+        DELIMITER //
+
+        DROP PROCEDURE IF EXISTS SelectDemoRecords;
+        CREATE PROCEDURE SelectDemoRecords()
+        BEGIN
+            SELECT * FROM TEMP_DB.DEMO2 LIMIT 10;
+        END //
+
+        DELIMITER ;
+
+        -- Calling the procedure
+        CALL SelectDemoRecords();
