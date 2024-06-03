@@ -224,3 +224,18 @@
         
         -- Calling the procedure
         CALL UpdateDemoRecord(1, 'AMIT');
+
+-- 10.4 Stored Procedure with DELETE:
+
+        DELIMITER //
+
+        DROP PROCEDURE IF EXISTS DeleteDemoRecord;
+        CREATE PROCEDURE DeleteDemoRecord(IN record_id INT)
+        BEGIN
+            DELETE FROM TEMP_DB.DEMO2 WHERE id = record_id;
+        END //
+
+        DELIMITER ;
+
+        -- Calling the procedure
+        CALL DeleteDemoRecord(2);
