@@ -260,3 +260,9 @@
         -- MySQL does not support an ALTER PROCEDURE statement. 
 
         DROP PROCEDURE IF EXISTS TEMP_DB.SelectDemoRecords;
+
+-- [12] Listing Stored Procedures:
+
+-- 12.1 To list all stored procedures in the current database:
+
+        SHOW PROCEDURE STATUS WHERE Db = 'TEMP_DB';
