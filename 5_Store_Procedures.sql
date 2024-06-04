@@ -301,4 +301,20 @@
         DELIMITER ;
 
         -- Calling the Procedure
-        CALL InsertIfNotExists('Unique Name', 123);
+        CALL InsertIfNotExists('Unique Name', 123);     
+
+-- 13.3 Checking if a Record Exists Before UPDATE
+
+        DELIMITER //
+
+        CREATE PROCEDURE UpdateIfExists(IN record_id INT, IN new_name VARCHAR(100))
+        BEGIN
+            IF EXISTS (SELECT 1 FROM TEMP_DB.DEMO2 WHERE id = record_id) THEN
+                UPDATE TEMP_DB.DEMO2 SET name = new_name WHERE id = record_id;
+            END IF;
+        END //
+
+        DELIMITER ;
+
+        -- Calling the Procedure
+        CALL UpdateIfExists(1, 'ronak');
