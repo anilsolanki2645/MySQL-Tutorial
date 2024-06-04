@@ -266,3 +266,8 @@
 -- 12.1 To list all stored procedures in the current database:
 
         SHOW PROCEDURE STATUS WHERE Db = 'TEMP_DB';
+
+-- 12.2 To see the details of a specific stored procedure:
+        
+        SHOW CREATE PROCEDURE TEMP_DB.SelectDemoRecords;
+
