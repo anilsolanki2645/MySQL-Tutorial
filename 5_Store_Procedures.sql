@@ -270,7 +270,7 @@
 -- 12.2 To see the details of a specific stored procedure:
         
         SHOW CREATE PROCEDURE TEMP_DB.SelectDemoRecords;
-        
+
 -- [13] Conditionals in Stored Procedures
 
 -- 13.1 "REPLACE INTO" either inserts a new row or replaces an existing row if a duplicate key is found.
@@ -286,3 +286,19 @@
 
         -- Calling the Procedure
         CALL ReplaceDemoRecord(1, 'Hashmukh', 999);
+
+-- 13.2 Checking if a Record Exists Before INSERT
+
+        DELIMITER //
+
+        CREATE PROCEDURE InsertIfNotExists(IN new_name VARCHAR(100), IN new_value INT)
+        BEGIN
+            IF NOT EXISTS (SELECT 1 FROM TEMP_DB.DEMO2 WHERE name = new_name) THEN
+                INSERT INTO TEMP_DB.DEMO2 (name, value) VALUES (new_name, new_value);
+            END IF;
+        END //
+
+        DELIMITER ;
+
+        -- Calling the Procedure
+        CALL InsertIfNotExists('Unique Name', 123);
