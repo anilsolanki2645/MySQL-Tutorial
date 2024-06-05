@@ -14,3 +14,15 @@
 |         65 |
 +------------+  */
 
+-- [2] BIN()
+
+    -- This function returns a string representation of the argument (Binary Value).
+    SELECT BIN(5);
+
+/*
++--------+
+| BIN(5) |
++--------+
+| 101    |
++--------+  */
+
