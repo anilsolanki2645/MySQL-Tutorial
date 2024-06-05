@@ -26,3 +26,14 @@
 | 101    |
 +--------+  */
 
+-- [3] BIT_LENGTH()
+
+    -- This function returns length of argument in bits.  
+    SELECT BIT_LENGTH('abc');
+
+/*
++-------------------+
+| BIT_LENGTH('abc') |
++-------------------+
+|                24 |
++-------------------+   */
