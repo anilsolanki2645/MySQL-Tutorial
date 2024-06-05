@@ -37,3 +37,15 @@
 +-------------------+
 |                24 |
 +-------------------+   */
+
+-- [4] CHAR()
+
+    -- This function returns the character for each integer passed.
+    SELECT CHAR(65, 66, 67);
+
+/*
++----------------+
+| result         |
++----------------+
+| 0x414243       |
++----------------+  */
