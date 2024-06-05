@@ -49,3 +49,14 @@
 +----------------+
 | 0x414243       |
 +----------------+  */
+
+    SELECT CAST(CHAR(65, 66, 67) AS CHAR) AS result;
+    SELECT CONVERT(CHAR(65, 66, 67) USING latin1) AS result;
+
+/*
++--------+
+| result |
++--------+
+| ABC    |
++--------+  */
+
