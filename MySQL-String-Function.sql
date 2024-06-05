@@ -60,3 +60,33 @@
 | ABC    |
 +--------+  */
 
+-- [5] CHAR_LENGTH(), LENGTH() AND OCTET_LENGTH() 
+
+    -- This function returns number of characters in argument.
+    SELECT CHAR_LENGTH('hello');
+
+    -- This function returns the length of a string in bytes.
+    SELECT LENGTH(5678);    
+
+    -- This function is a synonym for LENGTH().
+    SELECT OCTET_LENGTH('Hello');
+
+
+/*
++----------------------+
+| CHAR_LENGTH('hello') |
++----------------------+
+|                    5 |
++----------------------+    
+
++--------------+
+| LENGTH(5678) |
++--------------+
+|            4 |
++--------------+   
+
++-----------------------+
+| OCTET_LENGTH('Hello') |
++-----------------------+
+|                     5 |
++-----------------------+    */
