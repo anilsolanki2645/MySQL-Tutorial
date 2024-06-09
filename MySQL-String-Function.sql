@@ -126,3 +126,15 @@
 +---------------------------------------+
 | three                                 |
 +---------------------------------------+   */
+
+-- [9] EXPORT_SET()
+
+    -- This function returns a string such that for every bit set in the value bits, you get an on string and for every unset bit, you get an off string.
+    SELECT EXPORT_SET(5, 'Y', 'N', ',', 4);
+
+/*
++---------------------------------+
+| EXPORT_SET(5, 'Y', 'N', ',', 4) |
++---------------------------------+
+| Y,N,Y,N                         |
++---------------------------------+ */
