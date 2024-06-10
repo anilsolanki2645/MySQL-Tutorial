@@ -199,3 +199,22 @@
 +------------------------+
 |                      4 |
 +------------------------+      */
+
+-- [15] LCASE() and LOWER()
+
+    -- This function returns the argument in lowercase.
+    SELECT LCASE('HELLO');
+    SELECT LOWER('WORLD');
+
+/*
++----------------+
+| LCASE('HELLO') |
++----------------+
+| hello          |
++----------------+
+
++----------------+
+| LOWER('WORLD') |
++----------------+
+| world          |
++----------------+      */
