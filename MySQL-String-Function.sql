@@ -187,3 +187,15 @@
 +--------------------------------------+
 | Hello MySQL                          |
 +--------------------------------------+    */
+
+-- [14] INSTR()
+
+    -- This function returns the index of the first occurrence of substring.
+    SELECT INSTR('foobar', 'bar');
+
+/*
++------------------------+
+| INSTR('foobar', 'bar') |
++------------------------+
+|                      4 |
++------------------------+      */
