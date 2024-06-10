@@ -175,3 +175,15 @@
 +-------------+
 | Hello world |
 +-------------+     */
+
+-- [13] INSERT()
+
+    -- Inserts a substring at the specified position up to the specified number of characters.
+    SELECT INSERT('Hello World', 7, 5, 'MySQL');
+
+/*
++--------------------------------------+
+| INSERT('Hello World', 7, 5, 'MySQL') |
++--------------------------------------+
+| Hello MySQL                          |
++--------------------------------------+    */
