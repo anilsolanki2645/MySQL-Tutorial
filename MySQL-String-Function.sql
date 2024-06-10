@@ -162,3 +162,16 @@
 +-----------------------------+
 |                           2 |
 +-----------------------------+     */
+
+-- [12] FROM_BASE64()
+
+    -- This function decodes a base-64 encoded string as a binary string.
+    SELECT CONVERT(FROM_BASE64('SGVsbG8gd29ybGQ=') USING utf8) AS result;
+    SELECT CAST(FROM_BASE64('SGVsbG8gd29ybGQ=') AS CHAR) AS result;
+
+/*
++-------------+
+| result      |
++-------------+
+| Hello world |
++-------------+     */
