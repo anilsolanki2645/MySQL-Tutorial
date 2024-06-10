@@ -150,3 +150,15 @@
 +------------------------------------+
 |                                  3 |
 +------------------------------------+  */
+
+-- [11] FIND_IN_SET()
+
+    -- This function returns the index position of the first argument within the second argument.
+     SELECT FIND_IN_SET('b', 'a,b,c,d');
+
+/*
++-----------------------------+
+| FIND_IN_SET('b', 'a,b,c,d') |
++-----------------------------+
+|                           2 |
++-----------------------------+     */
