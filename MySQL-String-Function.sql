@@ -242,3 +242,11 @@
 +------------------------------------------------------------------------------------------------------------------------------+
 | NULL                                                                                                                         |
 +------------------------------------------------------------------------------------------------------------------------------+    */
+
+-- [18] LOCATE() AND POSITION()
+
+    -- This function returns the position of the first occurrence of substring.
+    SELECT LOCATE('bar', 'foobar');
+
+    -- This function is a synonym for LOCATE().
+    SELECT POSITION('bar' IN 'foobar');
