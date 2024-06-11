@@ -218,3 +218,15 @@
 +----------------+
 | world          |
 +----------------+      */
+
+-- [16] LEFT()
+
+    -- This function returns the leftmost number of characters as specified.
+    SELECT LEFT('Hello', 2);
+
+/*
++------------------+
+| LEFT('Hello', 2) |
++------------------+
+| He               |
++------------------+        */
