@@ -299,3 +299,11 @@
 +--------------------------------------+
 | e,f                                  |
 +--------------------------------------+    */
+
+-- [23] MID(), SUBSTR() AND SUBSTRING()
+
+    -- This function returns a substring starting from the specified position.
+    SELECT MID('Hello World', 7, 4);
+
+    -- This function returns the substring as specified.
+    SELECT SUBSTR('Hello World', 7, 5);
