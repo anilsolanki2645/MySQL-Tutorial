@@ -263,3 +263,15 @@
 +-----------------------------+
 |                           4 |
 +-----------------------------+    */
+
+-- [19] LPAD()
+
+    -- This function returns the string argument, left-padded with the specified string.
+    SELECT LPAD('Hello', 10, '#');
+
+/*
++------------------------+
+| LPAD('Hello', 10, '#') |
++------------------------+
+| #####Hello             |
++------------------------+  */
