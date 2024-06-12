@@ -287,3 +287,15 @@
 +---------+
 | Hello   |
 +---------+     */
+
+-- [21] MAKE_SET()
+
+    -- This function returns a set of comma-separated strings that have the corresponding bit in bits set. (3+2=5)
+    SELECT MAKE_SET(5, 'e', 'b', 'f', 'd', 'A');
+
+/*
++--------------------------------------+
+| MAKE_SET(5, 'e', 'b', 'f', 'd', 'A') |
++--------------------------------------+
+| e,f                                  |
++--------------------------------------+    */
