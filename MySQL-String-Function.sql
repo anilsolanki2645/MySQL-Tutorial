@@ -307,3 +307,6 @@
 
     -- This function returns the substring as specified.
     SELECT SUBSTR('Hello World', 7, 5);
+
+    -- This function returns the substring as specified.
+    SELECT SUBSTRING('Hello World', 7, 5);
