@@ -275,3 +275,15 @@
 +------------------------+
 | #####Hello             |
 +------------------------+  */
+
+-- [20] LTRIM()
+
+    -- This function is used to removes leading spaces from the given string.
+    SELECT LTRIM('   Hello');
+
+/*
++---------+
+| LSTRING |
++---------+
+| Hello   |
++---------+     */
