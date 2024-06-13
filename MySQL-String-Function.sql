@@ -353,3 +353,15 @@
 +----------+
 |       65 |
 +----------+    */
+
+-- [26] QUOTE()
+
+    -- This function escapes the argument for use in an SQL statement.
+    SELECT QUOTE('Hello "MySQL"');
+
+/*
++------------------------+
+| QUOTE('Hello "MySQL"') |
++------------------------+
+| 'Hello "MySQL"'        |
++------------------------+      */
