@@ -389,3 +389,15 @@
 +---------------------+
 | Hello Hello Hello   |
 +---------------------+     */
+
+-- [29] REVERSE()
+
+    -- This function is used to reverse the characters in a string
+    SELECT REVERSE('Hello');
+
+/*
++------------------+
+| REVERSE('Hello') |
++------------------+
+| olleH            |
++------------------+    */
