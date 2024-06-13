@@ -377,3 +377,15 @@
 +------------------------------------------+
 | Hello MySQL                              |
 +------------------------------------------+    */
+
+-- [28] REPEAT()
+
+    -- This function returns the starting index of the substring matching given regular expression.
+    SELECT REPEAT('Hello ', 3);
+
+/*
++---------------------+
+| REPEAT('Hello ', 3) |
++---------------------+
+| Hello Hello Hello   |
++---------------------+     */
