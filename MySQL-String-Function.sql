@@ -365,3 +365,15 @@
 +------------------------+
 | 'Hello "MySQL"'        |
 +------------------------+      */
+
+-- [27] REPLACE()
+
+    -- This function replaces the matched sub string with the replacement string and returns the result.
+    SELECT REPLACE('Hello World', 'World', 'MySQL');
+
+/*
++------------------------------------------+
+| REPLACE('Hello World', 'World', 'MySQL') |
++------------------------------------------+
+| Hello MySQL                              |
++------------------------------------------+    */
