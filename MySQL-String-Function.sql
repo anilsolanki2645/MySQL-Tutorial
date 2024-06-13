@@ -341,3 +341,15 @@
 +--------+
 | 10     |
 +--------+  */
+
+-- [25] ORD()
+
+    -- If the leftmost character of the argument is a multi-byte character, returns the code for that character.
+    SELECT ORD('A');
+
+/*
++----------+
+| ORD('A') |
++----------+
+|       65 |
++----------+    */
