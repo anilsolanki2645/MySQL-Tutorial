@@ -329,3 +329,15 @@
 +--------------------------------+
 | World                          |
 +--------------------------------+    */
+
+-- [24] OCT()
+
+    -- This function returns a string representation of the octal argument.
+    SELECT OCT(8);
+
+/*
++--------+
+| OCT(8) |
++--------+
+| 10     |
++--------+  */
