@@ -425,3 +425,15 @@
 +------------------------+
 | Hello*****             |
 +------------------------+  */
+
+-- [32] RTRIM()
+
+    -- This function is used to remove trailing spaces.
+    SELECT RTRIM('Hello   ');
+
+/*
++-------------------+
+| RTRIM('Hello   ') |
++-------------------+
+| Hello             |
++-------------------+   */
