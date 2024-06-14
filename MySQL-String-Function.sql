@@ -437,3 +437,15 @@
 +-------------------+
 | Hello             |
 +-------------------+   */
+
+-- [33] SOUNDEX()
+
+    -- This function returns a soundex string.
+    SELECT SOUNDEX('Hello');
+
+/*
++------------------+
+| SOUNDEX('Hello') |
++------------------+
+| H400             |
++------------------+    */
