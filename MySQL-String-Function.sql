@@ -449,3 +449,15 @@
 +------------------+
 | H400             |
 +------------------+    */
+
+-- [34] SPACE()
+
+    -- This function returns a string of the specified number of spaces.
+    SELECT SPACE(5);
+
+/*
++----------+
+| SPACE(5) |
++----------+
+|          |
++----------+    */
