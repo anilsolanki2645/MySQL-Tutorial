@@ -413,3 +413,15 @@
 +-------------------+
 | llo               |
 +-------------------+   */
+
+-- [31] RPAD()
+
+    -- This function is used to add padding to the right side of the string until it reaches the desired length.
+    SELECT RPAD('Hello', 10, '*');
+
+/*
++------------------------+
+| RPAD('Hello', 10, '*') |
++------------------------+
+| Hello*****             |
++------------------------+  */
