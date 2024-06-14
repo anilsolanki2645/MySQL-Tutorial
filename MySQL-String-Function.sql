@@ -401,3 +401,15 @@
 +------------------+
 | olleH            |
 +------------------+    */
+
+-- [30] RIGHT()
+
+    -- This function returns the specified rightmost number of characters.
+    SELECT RIGHT('Hello', 3);
+
+/*
++-------------------+
+| RIGHT('Hello', 3) |
++-------------------+
+| llo               |
++-------------------+   */
