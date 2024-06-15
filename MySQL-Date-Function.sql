@@ -22,3 +22,17 @@
 | 2024-05-11 |
 +------------+	*/
 
+-- [2] DATE_SUB() AND SUBDATE()
+
+	-- This function subtracts a specified time interval from a date.
+	SELECT DATE_SUB('2024-05-01', INTERVAL 10 DAY) AS SUB_DATE;
+
+	-- This function subtracts a specified interval from a date.
+	SELECT SUBDATE('2024-05-01', INTERVAL 10 DAY) AS SUB_DATE;
+
+/*
++------------+
+| SUB_DATE   |
++------------+
+| 2024-04-21 |
++------------+		*/
