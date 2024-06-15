@@ -492,3 +492,22 @@
 +---------------------------+
 | Hello World               |
 +---------------------------+   */
+
+-- [37] UPPER() AND UCASE()
+
+    -- This function is used to convert the characters in the given string to uppercase.
+    SELECT UCASE('hello'); 
+    SELECT UPPER('world'); 
+
+/*
++----------------+
+| UCASE('hello') |
++----------------+
+| HELLO          |
++----------------+
+
++----------------+
+| UPPER('world') |
++----------------+
+| WORLD          |
++----------------+  */
