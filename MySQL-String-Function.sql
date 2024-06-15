@@ -480,3 +480,15 @@
 +----------------------+
 |                    0 |
 +----------------------+    */
+
+-- [36] TRIM()
+
+    -- This function is used to removes the leading and trailing spaces of the given string.
+    SELECT TRIM('   Hello World   ');
+
+/*
++---------------------------+
+| TRIM('   Hello World   ') |
++---------------------------+
+| Hello World               |
++---------------------------+   */
