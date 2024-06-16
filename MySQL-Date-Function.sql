@@ -36,3 +36,15 @@
 +------------+
 | 2024-04-21 |
 +------------+		*/
+
+-- [3] ADDTIME()
+
+	-- This function adds a specified time interval to a time or datetime.
+	SELECT ADDTIME('10:00:00', '02:30:00') AS add_time;
+
+/*
++----------+
+| add_time |
++----------+
+| 12:30:00 |
++----------+	*/
