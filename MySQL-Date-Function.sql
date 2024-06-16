@@ -60,3 +60,15 @@
 +----------+
 | NULL     |
 +----------+	*/
+
+-- [5] CURDATE()
+
+	-- This function returns the current date.
+	SELECT CURDATE();
+
+/*
++------------+
+| CURDATE()  |
++------------+
+| 2024-05-20 |
++------------+	*/
