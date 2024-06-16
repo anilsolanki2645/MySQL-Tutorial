@@ -48,3 +48,15 @@
 +----------+
 | 12:30:00 |
 +----------+	*/
+
+-- [4] CONVERT_TZ()
+
+	-- This function converts a datetime value from one timezone to another. []
+	SELECT CONVERT_TZ('2024-05-01 10:00:00', 'UTC', 'America/New_York') AS timezone;
+
+/*
++----------+
+| timezone |
++----------+
+| NULL     |
++----------+	*/
