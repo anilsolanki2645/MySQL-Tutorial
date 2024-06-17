@@ -103,3 +103,9 @@
 +-----------+
 | 11:55:41  |
 +-----------+	*/
+
+	-- Synonyms for CURTIME()
+	-- 4.1 CURRENT_TIME and CURRENT_TIME()
+	SELECT CURRENT_TIME;
+	SELECT CURRENT_TIME();
+
