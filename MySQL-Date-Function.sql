@@ -133,3 +133,10 @@
 +---------------------+
 | 2024-05-20 12:00:06 |
 +---------------------+	 */
+
+	-- Synonyms for NOW()
+	-- 4.1 CURRENT_TIMESTAMP and CURRENT_TIMESTAMP()
+	SELECT CURRENT_TIMESTAMP;
+	SELECT CURRENT_TIMESTAMP();
+
+	
