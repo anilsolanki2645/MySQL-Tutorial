@@ -171,3 +171,15 @@
 +-------------------------+
 | Wednesday, May 01, 2024 |
 +-------------------------+		*/
+
+-- [9] DATE()
+
+	-- This function extracts the date part of a date or datetime expression.
+	SELECT DATE('2024-05-01 10:30:00') AS DATE;
+
+/*
++------------+
+| DATE       |
++------------+
+| 2024-05-01 |
++------------+		*/
