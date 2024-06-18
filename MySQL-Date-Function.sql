@@ -183,3 +183,15 @@
 +------------+
 | 2024-05-01 |
 +------------+		*/
+
+-- [10] DATEDIFF()
+
+	-- This function returns the number of days between two dates.
+	SELECT DATEDIFF('2024-05-01', '2024-04-20') AS DATE_DIFF;
+
+/*
++-----------+
+| DATE_DIFF |
++-----------+
+|        11 |
++-----------+	*/
