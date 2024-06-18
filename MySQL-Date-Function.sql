@@ -195,3 +195,24 @@
 +-----------+
 |        11 |
 +-----------+	*/
+
+-- [11] DAY() AND DAYOFMONTH()
+
+	-- This function retrieves the day of the month from a given date.
+	SELECT DAY(NOW());
+
+	-- This function returns the day of the month (1-31).
+	SELECT DAYOFMONTH('2024-05-05');
+
+/*
++------------+
+| DAY(NOW()) |
++------------+
+|         20 |
++------------+	
+
++--------------------------+
+| DAYOFMONTH('2024-05-05') |
++--------------------------+
+|                        5 |
++--------------------------+	*/
