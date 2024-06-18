@@ -228,3 +228,13 @@
 +-----------------------+
 | Wednesday             |
 +-----------------------+	*/
+
+	-- This function returns the weekday index of the argument (1=Sunday, 2=Monday, ..., 7=Saturday).
+	SELECT DAYOFWEEK('2024-05-19');
+
+/*
++-------------------------+
+| DAYOFWEEK('2024-05-19') |
++-------------------------+
+|                       1 |
++-------------------------+		*/
