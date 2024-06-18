@@ -159,3 +159,15 @@
 +---------------------+
 | 2024-05-20 12:01:25 |
 +---------------------+	 */
+
+-- [8] DATE_FORMAT()
+
+	-- This function formats a date according to the specified format.
+	SELECT DATE_FORMAT('2024-05-01', '%W, %M %d, %Y') AS DATE_FORMATE;
+
+/*
++-------------------------+
+| DATE_FORMATE            |
++-------------------------+
+| Wednesday, May 01, 2024 |
++-------------------------+		*/
