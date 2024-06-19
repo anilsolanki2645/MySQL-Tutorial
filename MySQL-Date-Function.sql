@@ -251,3 +251,15 @@
 +------------------+
 |              141 |
 +------------------+	*/
+
+-- [14] EXTRACT()
+
+	-- This function extracts part of a date.
+	SELECT EXTRACT(YEAR FROM '2024-05-01') AS YEAR;
+
+/*
++------+
+| YEAR |
++------+
+| 2024 |
++------+	*/
