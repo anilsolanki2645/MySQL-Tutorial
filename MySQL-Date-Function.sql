@@ -306,3 +306,16 @@
 +-------------+
 |          12 |
 +-------------+		*/
+
+-- [18] LAST_DAY()
+
+	-- This function returns the last day of the month for the argument.
+	SELECT LAST_DAY('2024-05-01');
+	SELECT LAST_DAY(NOW());
+
+/*
++------------------------+
+| LAST_DAY('2024-05-01') |
++------------------------+
+| 2024-05-31             |
++------------------------+	*/
