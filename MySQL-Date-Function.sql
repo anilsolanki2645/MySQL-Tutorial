@@ -331,3 +331,15 @@
 +------------+
 | 2024-05-20 |
 +------------+	*/
+
+-- [20] MAKETIME()
+
+	-- This function creates a time value from the given hours, minutes, and seconds.
+	SELECT MAKETIME(10, 30, 0);
+
+/*
++---------------------+
+| MAKETIME(10, 30, 0) |
++---------------------+
+| 10:30:00            |
++---------------------+		*/
