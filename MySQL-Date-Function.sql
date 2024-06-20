@@ -319,3 +319,15 @@
 +------------------------+
 | 2024-05-31             |
 +------------------------+	*/
+
+-- [19] MAKEDATE()
+
+	-- This function creates a date from the year and day of the year.
+	SELECT MAKEDATE(2024, 141) AS MAKE_DATE;
+
+/*
++------------+
+| MAKE_DATE  |
++------------+
+| 2024-05-20 |
++------------+	*/
