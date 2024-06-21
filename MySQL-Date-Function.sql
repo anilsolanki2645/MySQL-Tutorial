@@ -443,3 +443,15 @@
 +---------------------------------------+
 | 2024-05-01                            |
 +---------------------------------------+	*/
+
+-- [29] SUBTIME()
+
+	-- This function subtracts a specified time interval from a time or datetime.
+	SELECT SUBTIME('10:00:00', '02:30:00') AS SUB_TIME;
+
+/*
++----------+
+| SUB_TIME |
++----------+
+| 07:30:00 |
++----------+	*/
