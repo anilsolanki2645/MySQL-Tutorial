@@ -503,3 +503,16 @@
 +----------------------------------+
 | 07:30:00                         |
 +----------------------------------+	*/
+
+-- [34] TIMESTAMP()
+
+	-- With a single argument, this function returns the date or datetime expression. With two arguments, it returns the sum of the arguments.
+	SELECT TIMESTAMP('2024-05-01', '10:30:00');
+	SELECT TIMESTAMP(NOW());
+
+/*
++-------------------------------------+
+| TIMESTAMP('2024-05-01', '10:30:00') |
++-------------------------------------+
+| 2024-05-01 10:30:00                 |
++-------------------------------------+		*/
