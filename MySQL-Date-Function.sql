@@ -529,3 +529,14 @@
 +-------------------------------------------------+
 | 2024-05-01 10:50:00                             |
 +-------------------------------------------------+		*/
+
+-- [36] TIMESTAMPDIFF()
+
+	-- This function subtracts an interval from a datetime expression.
+	SELECT TIMESTAMPDIFF(MINUTE, '2024-05-01 10:30:00', '2024-05-01 11:00:00');
+
+	-- Difference DAY wise
+	SELECT TIMESTAMPDIFF(DAY, '2024-05-01 10:30:00', NOW());
+
+	-- Difference HOUR wise
+	SELECT TIMESTAMPDIFF(HOUR, '2024-05-01 10:30:00', NOW());
