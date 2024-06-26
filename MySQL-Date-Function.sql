@@ -626,3 +626,16 @@
 +-------------+
 |          20 |
 +-------------+		*/
+
+-- [42] WEEKOFYEAR()
+
+	-- This function returns the calendar week of the date (1-53).
+	SELECT WEEKOFYEAR('2024-05-01');
+	SELECT WEEKOFYEAR(now());
+
+/*
++--------------------------+
+| WEEKOFYEAR('2024-05-01') |
++--------------------------+
+|                       18 |
++--------------------------+
