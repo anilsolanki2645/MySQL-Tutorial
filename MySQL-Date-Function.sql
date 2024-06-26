@@ -595,3 +595,15 @@
 +------------+
 | 08:43:09   |
 +------------+		*/
+
+-- [40] UTC_TIMESTAMP()
+
+	-- This function returns the current UTC date and time.
+	SELECT UTC_TIMESTAMP();
+
+/*
++---------------------+
+| UTC_TIMESTAMP()     |
++---------------------+
+| 2024-05-20 08:43:42 |
++---------------------+		*/
