@@ -737,3 +737,11 @@
 +---------------------------------------+
 | 05/01/2024                            |
 +---------------------------------------+	*/
+
+-- [50] Date and Time Format
+
+	-- Convert a datetime to the format YYYY-MM-DD HH:MM:SS:
+	SELECT DATE_FORMAT('2024-05-01 10:30:45', '%Y-%m-%d %H:%i:%s');
+
+	-- Convert a datetime to the format DD-MM-YYYY HH:MM:SS:
+	SELECT DATE_FORMAT('2024-05-01 10:30:45', '%d-%m-%Y %H:%i:%s');
