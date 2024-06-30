@@ -777,3 +777,9 @@
 +--------------------------+
 | 02:40:55 PM              |
 +--------------------------+	*/
+
+-- [52] Day of the Month and Month Name
+
+	-- Convert a date to display the day of the month and month name:
+	SELECT DATE_FORMAT('2024-05-01', '%d %M');
+	SELECT DATE_FORMAT('2024-05-01', '%D %M');
