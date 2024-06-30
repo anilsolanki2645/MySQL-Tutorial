@@ -783,3 +783,10 @@
 	-- Convert a date to display the day of the month and month name:
 	SELECT DATE_FORMAT('2024-05-01', '%d %M');
 	SELECT DATE_FORMAT('2024-05-01', '%D %M');
+
+/*
++------------------------------------+
+| DATE_FORMAT('2024-05-01', '%d %M') |
++------------------------------------+
+| 01 May                             |
++------------------------------------+
