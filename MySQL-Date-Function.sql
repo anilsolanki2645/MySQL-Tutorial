@@ -796,3 +796,9 @@
 +------------------------------------+
 | 1st May                            |
 +------------------------------------+	*/
+
+-- [53] ISO 8601 Format
+
+	-- Convert a date to ISO 8601 format YYYY-MM-DDTHH:MM:SS:
+	SELECT DATE_FORMAT('2024-05-01 10:30:45', '%Y-%m-%dT%H:%i:%s');
+	SELECT DATE_FORMAT(NOW(), '%Y-%m-%dT%H:%i:%s');
