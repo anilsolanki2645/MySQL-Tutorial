@@ -831,3 +831,5 @@
 									11. %r: Time in 12-hour format (hh:mm:ss AM/PM)
 									12. %T: Time in 24-hour format (hh:mm:ss)
 									13. %u: Week number (00-53)
+									14. %b: Abbreviated month name
+									15. %a: Abbreviated weekday name
