@@ -828,3 +828,6 @@
 									8.  %h: Hour (01-12)
 									9.  %i: Minutes (00-59)
 									10. %s: Seconds (00-59)
+									11. %r: Time in 12-hour format (hh:mm:ss AM/PM)
+									12. %T: Time in 24-hour format (hh:mm:ss)
+									13. %u: Week number (00-53)
