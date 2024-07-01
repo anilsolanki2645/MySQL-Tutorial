@@ -833,3 +833,7 @@
 									13. %u: Week number (00-53)
 									14. %b: Abbreviated month name
 									15. %a: Abbreviated weekday name
+									16. %j: Day of the year (001-366)
+									17. %f: Microseconds
+
+*/
