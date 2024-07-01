@@ -821,3 +821,6 @@
 									1.  %Y: Year (4 digits)
 									2.  %y: Year (2 digits)
 									3.  %M: Full month name
+									4.  %m: Month (2 digits)
+									5.  %d: Day of the month (2 digits)
+									6.  %W: Full weekday name
