@@ -824,3 +824,7 @@
 									4.  %m: Month (2 digits)
 									5.  %d: Day of the month (2 digits)
 									6.  %W: Full weekday name
+									7.  %H: Hour (00-23)
+									8.  %h: Hour (01-12)
+									9.  %i: Minutes (00-59)
+									10. %s: Seconds (00-59)
