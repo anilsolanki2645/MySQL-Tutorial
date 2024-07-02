@@ -868,3 +868,17 @@ The chat covered various MySQL date and time functions with examples of how to u
 22. **HOUR()**: Extracts the hour from a time or datetime.
 23. **LAST_DAY()**: Returns the last day of the month for the argument.
 24. **LOCALTIME()**: Synonym for NOW().
+25. **LOCALTIMESTAMP()**: Synonym for NOW().
+26. **MAKEDATE()**: Creates a date from the year and day of the year.
+27. **MAKETIME()**: Creates a time value from given hours, minutes, and seconds.
+28. **MICROSECOND()**: Returns the microseconds from a datetime or time expression.
+29. **MINUTE()**: Returns the minute from a time or datetime.
+30. **MONTH()**: Returns the month from a date.
+31. **MONTHNAME()**: Returns the name of the month.
+32. **NOW()**: Returns the current date and time.
+33. **PERIOD_ADD()**: Adds a period to a year-month.
+34. **PERIOD_DIFF()**: Returns the number of months between periods.
+35. **QUARTER()**: Returns the quarter from a date argument.
+36. **SEC_TO_TIME()**: Converts seconds to 'HH:MM:SS' format.
+37. **SECOND()**: Returns the second (0-59) from a time or datetime.
+38. **STR_TO_DATE()**: Converts a string to a date.
