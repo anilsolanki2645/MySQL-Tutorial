@@ -882,3 +882,15 @@ The chat covered various MySQL date and time functions with examples of how to u
 36. **SEC_TO_TIME()**: Converts seconds to 'HH:MM:SS' format.
 37. **SECOND()**: Returns the second (0-59) from a time or datetime.
 38. **STR_TO_DATE()**: Converts a string to a date.
+39. **SUBDATE()**: Subtracts a specified interval from a date.
+40. **SUBTIME()**: Subtracts a specified time interval from a time or datetime.
+41. **SYSDATE()**: Returns the time at which the function executes.
+42. **TIME_FORMAT()**: Formats a time according to the specified format.
+43. **TIME_TO_SEC()**: Converts a time value to seconds.
+44. **TIME()**: Extracts the time portion of a datetime expression.
+45. **TIMEDIFF()**: Subtracts two time values.
+46. **TIMESTAMP()**: Returns a datetime expression; with two arguments, sums the arguments.
+47. **TIMESTAMPADD()**: Adds an interval to a datetime expression.
+48. **TIMESTAMPDIFF()**: Subtracts an interval from a datetime expression.
+49. **TO_DAYS()**: Converts a date to the number of days since year 0.
+50. **UNIX_TIMESTAMP()**: Returns a Unix timestamp.
