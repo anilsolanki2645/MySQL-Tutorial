@@ -894,3 +894,12 @@ The chat covered various MySQL date and time functions with examples of how to u
 48. **TIMESTAMPDIFF()**: Subtracts an interval from a datetime expression.
 49. **TO_DAYS()**: Converts a date to the number of days since year 0.
 50. **UNIX_TIMESTAMP()**: Returns a Unix timestamp.
+51. **UTC_DATE()**: Returns the current UTC date.
+52. **UTC_TIME()**: Returns the current UTC time.
+53. **UTC_TIMESTAMP()**: Returns the current UTC date and time.
+54. **WEEK()**: Returns the week number; mode can be specified.
+55. **WEEKDAY()**: Returns the weekday index (0=Monday).
+56. **WEEKOFYEAR()**: Returns the calendar week of the date (1-53).
+57. **YEAR()**: Returns the year from a date.
+58. **YEARWEEK()**: Returns the year and week.
+59. **TO_SECONDS()**: Converts date or datetime values to seconds.
