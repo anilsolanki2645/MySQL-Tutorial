@@ -845,3 +845,15 @@
 The chat covered various MySQL date and time functions with examples of how to use each one. Here is a brief summary of the discussed functions and their purposes:
 
 1. **ADDDATE()**: Adds a specified time interval to a date.
+2. **ADDTIME()**: Adds a specified time interval to a time or datetime.
+3. **CONVERT_TZ()**: Converts a datetime value from one timezone to another.
+4. **CURDATE()**: Returns the current date.
+5. **CURRENT_DATE()**: Synonym for CURDATE().
+6. **CURRENT_TIME()**: Synonym for CURTIME().
+7. **CURRENT_TIMESTAMP()**: Synonym for NOW().
+8. **CURTIME()**: Returns the current time.
+9. **DATE_ADD()**: Adds a specified time interval to a date.
+10. **DATE_FORMAT()**: Formats a date according to the specified format.
+11. **DATE_SUB()**: Subtracts a specified time interval from a date.
+12. **DATE()**: Extracts the date part of a datetime expression.
+13. **DATEDIFF()**: Returns the number of days between two dates.
