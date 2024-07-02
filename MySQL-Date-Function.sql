@@ -837,3 +837,11 @@
 									17. %f: Microseconds
 
 */
+
+-- --------------------------------------- END --------------------------------------------
+/*
+### Summary
+
+The chat covered various MySQL date and time functions with examples of how to use each one. Here is a brief summary of the discussed functions and their purposes:
+
+1. **ADDDATE()**: Adds a specified time interval to a date.
