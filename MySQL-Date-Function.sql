@@ -857,3 +857,14 @@ The chat covered various MySQL date and time functions with examples of how to u
 11. **DATE_SUB()**: Subtracts a specified time interval from a date.
 12. **DATE()**: Extracts the date part of a datetime expression.
 13. **DATEDIFF()**: Returns the number of days between two dates.
+14. **DAY()**: Retrieves the day of the month from a given date.
+15. **DAYNAME()**: Returns the name of the weekday.
+16. **DAYOFMONTH()**: Returns the day of the month (1-31).
+17. **DAYOFWEEK()**: Returns the weekday index of the argument (1=Sunday).
+18. **DAYOFYEAR()**: Returns the day of the year (1-366).
+19. **EXTRACT()**: Extracts part of a date.
+20. **FROM_DAYS()**: Converts a day number to a date.
+21. **FROM_UNIXTIME()**: Formats a Unix timestamp as a date.
+22. **HOUR()**: Extracts the hour from a time or datetime.
+23. **LAST_DAY()**: Returns the last day of the month for the argument.
+24. **LOCALTIME()**: Synonym for NOW().
