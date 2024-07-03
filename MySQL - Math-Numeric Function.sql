@@ -59,3 +59,8 @@
 +--------------------+
 | 1.5707963267948966 |
 +--------------------+      */
+
+-- [4] ATAN()
+
+    -- Returns the arctangent of a numeric expression.
+    SELECT ATAN(1);  -- Returns 0.7854 (π/4 radians, which is 45 degrees)
