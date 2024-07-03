@@ -40,3 +40,9 @@
 +--------------------+
 | 1.5707963267948966 |
 +--------------------+  */
+
+-- [3] ASIN()
+
+    -- Returns the arcsine of a numeric expression. Returns NULL if the value is not in the range -1 to 1.
+    SELECT ASIN(0);  -- Returns 0 (0 radians, which is 0 degrees)
+    SELECT ASIN(1);  -- Returns 1.5708 (π/2 radians, which is 90 degrees)
