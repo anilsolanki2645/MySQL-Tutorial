@@ -100,3 +100,16 @@
     -- Returns the smallest integer value that is not less than the passed numeric expression.
     SELECT CEILING(2.3);  -- Returns 3
     SELECT CEILING(-2.3); -- Returns -2
+
+/*
++-----------+
+| CEIL(2.3) |
++-----------+
+|         3 |
++-----------+
+
++------------+
+| CEIL(-2.3) |
++------------+
+|         -2 |
++------------+  
