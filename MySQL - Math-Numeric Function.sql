@@ -77,3 +77,16 @@
     -- Returns the arctangent of the two variables passed to it. The result is in radians.
     SELECT ATAN2(1, 1);  -- Returns 0.7854 (π/4 radians, which is 45 degrees)
     SELECT ATAN2(1, 0);  -- Returns 1.5708 (π/2 radians, which is 90 degrees)
+
+/*
++--------------------+
+| ATAN2(1, 1)        |
++--------------------+
+| 0.7853981633974483 |
++--------------------+
+
++--------------------+
+| ATAN2(1, 0)        |
++--------------------+
+| 1.5707963267948966 |
++--------------------+      */
