@@ -90,3 +90,9 @@
 +--------------------+
 | 1.5707963267948966 |
 +--------------------+      */
+
+-- [6] CEIL() AND CEILING()
+
+    -- Returns the smallest integer value that is not less than the passed numeric expression.
+    SELECT CEIL(2.3);  -- Returns 3
+    SELECT CEIL(-2.3); -- Returns -2
