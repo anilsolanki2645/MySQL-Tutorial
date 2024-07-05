@@ -131,3 +131,16 @@
     -- Converts a numeric expression from one base to another.
     SELECT CONV('a', 16, 2);  -- Converts hexadecimal 'a' to binary, returns '1010'
     SELECT CONV('1010', 2, 10); -- Converts binary '1010' to decimal, returns '10'  
+
+/*
++------------------+
+| CONV('a', 16, 2) |
++------------------+
+| 1010             |
++------------------+ 
+
++---------------------+
+| CONV('1010', 2, 10) |
++---------------------+
+| 10                  |
++---------------------+     */
