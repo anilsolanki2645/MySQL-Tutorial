@@ -163,3 +163,8 @@
 +--------------------+
 | 0.5000000000000001 |
 +--------------------+      */
+
+-- [9] COT()
+
+    -- Returns the cotangent of a numeric expression.
+    SELECT COT(PI()/4);  -- Returns 1
