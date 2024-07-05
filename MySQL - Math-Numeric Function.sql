@@ -150,3 +150,16 @@
     -- Returns the cosine of a numeric expression. The numeric expression should be expressed in radians.
     SELECT COS(0);  -- Returns 1
     SELECT COS(PI()/3);  -- Returns 0.5
+
+/*
++--------+
+| COS(0) |
++--------+
+|      1 |
++--------+
+
++--------------------+
+| COS(PI()/3)        |
++--------------------+
+| 0.5000000000000001 |
++--------------------+      */
