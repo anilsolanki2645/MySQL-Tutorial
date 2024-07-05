@@ -168,3 +168,10 @@
 
     -- Returns the cotangent of a numeric expression.
     SELECT COT(PI()/4);  -- Returns 1
+
+/*
++----------------+
+| CRC32('MySQL') |
++----------------+
+|     3259397556 |
++----------------+  */
