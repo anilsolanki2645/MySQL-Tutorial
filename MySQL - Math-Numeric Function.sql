@@ -206,3 +206,9 @@
 +-----------------+
 |              90 |
 +-----------------+     */
+
+-- [12]  EXP()
+
+    -- Returns the base of the natural logarithm (e) raised to the power of the passed numeric expression.
+    SELECT EXP(1);  -- Returns 2.718281828459045 (e)
+    SELECT EXP(2);  -- Returns 7.38905609893065 (e^2)
