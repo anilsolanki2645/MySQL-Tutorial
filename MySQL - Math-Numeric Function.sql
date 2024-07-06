@@ -193,3 +193,16 @@
     -- Returns a numeric expression converted from radians to degrees.
     SELECT DEGREES(PI());  -- Returns 180
     SELECT DEGREES(PI()/2);  -- Returns 90
+
+/*
++---------------+
+| DEGREES(PI()) |
++---------------+
+|           180 |
++---------------+
+
++-----------------+
+| DEGREES(PI()/2) |
++-----------------+
+|              90 |
++-----------------+     */
