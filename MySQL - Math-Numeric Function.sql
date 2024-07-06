@@ -175,3 +175,8 @@
 +----------------+
 |     3259397556 |
 +----------------+  */
+
+-- [10] CRC32()
+
+    -- Returns the Cyclic Redundancy Check (CRC) for the given value.
+    SELECT CRC32('MySQL');  -- Returns 3259397556
