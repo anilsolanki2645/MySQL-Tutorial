@@ -287,3 +287,16 @@
     -- Returns the natural logarithm of the passed numeric expression.
     SELECT LOG(1);  -- Returns 0
     SELECT LOG(EXP(1));  -- Returns 1
+
+/*
++--------+
+| LOG(1) |
++--------+
+|      0 |
++--------+
+
++-------------+
+| LOG(EXP(1)) |
++-------------+
+|           1 |
++-------------+     */
