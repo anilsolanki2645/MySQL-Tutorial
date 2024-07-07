@@ -281,3 +281,9 @@
 +----------+
 | FF       |
 +----------+ */
+
+-- [16]  LOG()
+
+    -- Returns the natural logarithm of the passed numeric expression.
+    SELECT LOG(1);  -- Returns 0
+    SELECT LOG(EXP(1));  -- Returns 1
