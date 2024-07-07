@@ -243,3 +243,9 @@
 +-------------+
 |          -3 |
 +-------------+     */
+
+-- [14] FORMAT()
+
+    -- Returns a numeric expression rounded to a number of decimal places.
+    SELECT FORMAT(1234.5678, 2);  -- Returns '1,234.57'
+    SELECT FORMAT(1234.5678, 0);  -- Returns '1,235'
