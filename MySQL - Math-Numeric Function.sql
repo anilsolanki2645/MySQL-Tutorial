@@ -262,3 +262,9 @@
 +----------------------+
 | 1,235                |
 +----------------------+    */
+
+-- [15]  HEX()
+
+    -- Returns the hexadecimal representation of the given value.
+    SELECT HEX('abc');  -- Returns '616263'
+    SELECT HEX(255);  -- Returns 'FF'
