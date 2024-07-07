@@ -268,3 +268,16 @@
     -- Returns the hexadecimal representation of the given value.
     SELECT HEX('abc');  -- Returns '616263'
     SELECT HEX(255);  -- Returns 'FF'
+
+/*
++------------+
+| HEX('abc') |
++------------+
+| 616263     |
++------------+
+
++----------+
+| HEX(255) |
++----------+
+| FF       |
++----------+ */
