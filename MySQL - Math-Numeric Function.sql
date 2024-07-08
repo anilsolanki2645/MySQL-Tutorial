@@ -306,3 +306,16 @@
     -- Returns the base-10 logarithm of the passed numeric expression.
     SELECT LOG10(100);  -- Returns 2
     SELECT LOG10(1000); -- Returns 3
+
+/*
++------------+
+| LOG10(100) |
++------------+
+|          2 |
++------------+
+
++-------------+
+| LOG10(1000) |
++-------------+
+|           3 |
++-------------+     */
