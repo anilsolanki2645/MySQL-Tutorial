@@ -344,3 +344,16 @@
     -- Returns the remainder of one expression by dividing by another expression.
     SELECT MOD(10, 3);  -- Returns 1
     SELECT MOD(10, 2);  -- Returns 0
+
+/*
++------------+
+| MOD(10, 3) |
++------------+
+|          1 |
++------------+
+
++------------+
+| MOD(10, 2) |
++------------+
+|          0 |
++------------+      */
