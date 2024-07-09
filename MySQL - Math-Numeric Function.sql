@@ -369,3 +369,9 @@
 +----------+
 | 3.141593 |
 +----------+    */
+
+-- [21] POW() AND  POWER()
+
+    -- Returns the value of one expression raised to the power of another expression.
+    SELECT POW(2, 3);  -- Returns 8
+    SELECT POW(5, 2);  -- Returns 25
