@@ -357,3 +357,8 @@
 +------------+
 |          0 |
 +------------+      */
+
+-- [20] PI()
+
+    -- Returns the value of pi.
+    SELECT PI();  -- Returns 3.141593
