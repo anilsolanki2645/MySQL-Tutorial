@@ -441,3 +441,9 @@
 +---------------------+
 | 0.40613597483014313 |
 +---------------------+     */
+
+-- [24] ROUND()
+
+    -- Returns the numeric expression rounded to an integer. Can be used to round an expression to a number of decimal points.
+    SELECT ROUND(123.456);     -- Returns 123
+    SELECT ROUND(123.456, 2);  -- Returns 123.46
