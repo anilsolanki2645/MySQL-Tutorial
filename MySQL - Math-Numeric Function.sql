@@ -403,3 +403,9 @@
 +-------------+
 |          25 |
 +-------------+     */
+
+-- [22] RADIANS()
+
+    -- Returns the value of the passed expression converted from degrees to radians.   
+    SELECT RADIANS(180);  -- Returns 3.141593
+    SELECT RADIANS(90);   -- Returns 1.570796
