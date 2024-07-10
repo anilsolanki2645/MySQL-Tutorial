@@ -422,3 +422,9 @@
 +--------------------+
 | 1.5707963267948966 |
 +--------------------+      */
+
+-- [23] RAND()
+
+    -- Returns a random floating-point value within the range 0 to 1.0.
+    SELECT RAND();  -- Returns a random number between 0 and 1, e.g., 0.123456
+    SELECT RAND(5); -- Returns a random number with seed 5
