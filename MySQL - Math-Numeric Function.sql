@@ -460,3 +460,8 @@
 +-------------------+
 |            123.46 |
 +-------------------+   */
+
+-- [25] SQRT()
+
+    -- Returns the non-negative square root of the numeric expression.
+    SELECT SQRT(16);
