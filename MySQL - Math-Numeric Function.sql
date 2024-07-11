@@ -465,3 +465,10 @@
 
     -- Returns the non-negative square root of the numeric expression.
     SELECT SQRT(16);
+
+/*
++----------+
+| SQRT(16) |
++----------+
+|        4 |
++----------+    */
