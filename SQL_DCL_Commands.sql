@@ -9,3 +9,7 @@ GRANT ALL PRIVILEGES ON database_name.* TO 'user'@'hostname';
 
 -- 1.2 Grant Specific Privileges to a User on a Database
 GRANT SELECT, INSERT, UPDATE ON database_name.* TO 'user'@'hostname';
+
+
+-- 1.3 Grant All Privileges to a User on a Specific Table
+GRANT ALL PRIVILEGES ON database_name.table_name TO 'user'@'hostname';
