@@ -25,3 +25,6 @@ GRANT ALL PRIVILEGES ON *.* TO 'user'@'hostname';
 
 -- 1.7 Grant Specific Privileges to All Databases
 GRANT SELECT, INSERT, UPDATE ON *.* TO 'user'@'hostname';
+
+-- 1.8 Grant Proxy Privileges
+GRANT PROXY ON 'user'@'hostname' TO 'proxied_user'@'proxied_hostname';
