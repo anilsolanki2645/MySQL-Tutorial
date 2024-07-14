@@ -39,3 +39,6 @@ REVOKE SELECT, INSERT, UPDATE ON database_name.* FROM 'user'@'hostname';
 
 -- 2.3 Revoke All Privileges from a User on a Specific Table:
 REVOKE ALL PRIVILEGES ON database_name.table_name FROM 'user'@'hostname';
+
+-- 2.4 Revoke Specific Privileges from a User on a Specific Table:
+REVOKE SELECT, INSERT, UPDATE ON database_name.table_name FROM 'user'@'hostname';
