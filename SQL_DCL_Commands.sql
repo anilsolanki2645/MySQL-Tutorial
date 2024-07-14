@@ -33,3 +33,6 @@ GRANT PROXY ON 'user'@'hostname' TO 'proxied_user'@'proxied_hostname';
 
 -- 2.1 Revoke All Privileges from a User on a Database
 REVOKE ALL PRIVILEGES ON database_name.* FROM 'user'@'hostname';
+
+-- 2.2 Revoke Specific Privileges from a User on a Database
+REVOKE SELECT, INSERT, UPDATE ON database_name.* FROM 'user'@'hostname';
