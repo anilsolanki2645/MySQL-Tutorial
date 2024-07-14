@@ -22,3 +22,6 @@ GRANT SELECT ON database_name.* TO 'user'@'hostname' WITH GRANT OPTION;
 
 -- 1.6 Grant Privileges to All Databases
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'hostname';
+
+-- 1.7 Grant Specific Privileges to All Databases
+GRANT SELECT, INSERT, UPDATE ON *.* TO 'user'@'hostname';
