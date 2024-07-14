@@ -28,3 +28,8 @@ GRANT SELECT, INSERT, UPDATE ON *.* TO 'user'@'hostname';
 
 -- 1.8 Grant Proxy Privileges
 GRANT PROXY ON 'user'@'hostname' TO 'proxied_user'@'proxied_hostname';
+
+-- -------------------------------- [2] REVOKE COMMAND -------------------------------------
+
+-- 2.1 Revoke All Privileges from a User on a Database
+REVOKE ALL PRIVILEGES ON database_name.* FROM 'user'@'hostname';
