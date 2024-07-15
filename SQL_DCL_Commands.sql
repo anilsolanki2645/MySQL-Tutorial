@@ -45,3 +45,7 @@ REVOKE SELECT, INSERT, UPDATE ON database_name.table_name FROM 'user'@'hostname'
 
 -- 2.5 Revoke Privileges with GRANT OPTION:
 REVOKE SELECT ON database_name.* FROM 'user'@'hostname' GRANT OPTION;
+
+-- 2.6 Revoke Proxy Privileges:
+REVOKE PROXY ON 'user'@'hostname' FROM 'proxied_user'@'proxied_hostname';
+
