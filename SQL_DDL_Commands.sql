@@ -18,3 +18,5 @@ CREATE TABLE IF NOT EXISTS DEMO(
     USER_NAME VARCHAR(30) NOT NULL,
     MOBILE BIGINT CHECK(LENGTH(MOBILE) = 10) NOT NULL,
     COMMENTS TEXT);
+
+-- Note : some Data type is not support like varchar2(only support in oracal) so be aware of this
