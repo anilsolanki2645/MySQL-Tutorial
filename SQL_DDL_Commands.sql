@@ -91,3 +91,11 @@ INSERT INTO DEMO_LOC (LOC_ID, ZIP, AREA) VALUES
 (23, 110023, 'Sarita Vihar'),
 (24, 110024, 'Lajpat Nagar'),
 (25, 110025, 'Defence Colony');
+
+-- -------------------------------- [2] ALTER TABLE COMMAND -------------------------------------
+
+-- -------------------------------- (2.1) ADD -----------------------------------
+
+-- 2.1.1 Add New Column With Default Constraints
+ALTER TABLE DEMO
+ADD COLUMN LOCATION VARCHAR(20) DEFAULT 'INDIA';
