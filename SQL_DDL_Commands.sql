@@ -56,3 +56,10 @@ CREATE VIEW DEMO_VIEW AS
     SELECT * FROM DEMO;
 
 -- NOTE : MySQL not support `IF NOT EXISTS` in Creating a View
+
+-- 1.4 Create a DEMO_LOC Table for Foreign key example
+
+ CREATE TABLE IF NOT EXISTS DEMO_LOC(
+    LOC_ID INT PRIMARY KEY,
+    ZIP INT NOT NULL,
+    AREA VARCHAR(20));
