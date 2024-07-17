@@ -49,3 +49,8 @@ INSERT INTO DEMO (D_ID, NAME, USER_NAME, MOBILE, COMMENTS) VALUES
 (23, 'Ananya Gupta', 'ananyagupta234', 7778889992, 'This is a comment for Ananya Gupta.'),
 (24, 'Aarav Singh', 'aaravsingh890', 4443332229, 'This is a comment for Aarav Singh.'),
 (25, 'Anika Gupta', 'anikagupta123', 8889990005, 'This is a comment for Anika Gupta.');
+
+-- 1.3 Create Views
+
+CREATE VIEW DEMO_VIEW AS
+    SELECT * FROM DEMO;
