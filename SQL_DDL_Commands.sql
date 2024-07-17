@@ -63,3 +63,31 @@ CREATE VIEW DEMO_VIEW AS
     LOC_ID INT PRIMARY KEY,
     ZIP INT NOT NULL,
     AREA VARCHAR(20));
+
+ -- Inserting records into DEMO_LOC table
+INSERT INTO DEMO_LOC (LOC_ID, ZIP, AREA) VALUES
+(1, 110001, 'Connaught Place'),
+(2, 110002, 'Chanakyapuri'),
+(3, 110003, 'Civil Lines'),
+(4, 110004, 'Karol Bagh'),
+(5, 110005, 'Rohini'),
+(6, 110006, 'Paharganj'),
+(7, 110007, 'Shakti Nagar'),
+(8, 110008, 'Rajouri Garden'),
+(9, 110009, 'Model Town'),
+(10, 110010, 'Punjabi Bagh'),
+(11, 110011, 'Patel Nagar'),
+(12, 110012, 'Uttam Nagar'),
+(13, 110013, 'Janakpuri'),
+(14, 110014, 'Pitampura'),
+(15, 110015, 'Paschim Vihar'),
+(16, 110016, 'Vasant Vihar'),
+(17, 110017, 'Saket'),
+(18, 110018, 'Dwarka'),
+(19, 110019, 'Najafgarh'),
+(20, 110020, 'South Extension'),
+(21, 110021, 'Hauz Khas'),
+(22, 110022, 'Malviya Nagar'),
+(23, 110023, 'Sarita Vihar'),
+(24, 110024, 'Lajpat Nagar'),
+(25, 110025, 'Defence Colony');
