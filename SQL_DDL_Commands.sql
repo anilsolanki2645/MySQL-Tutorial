@@ -117,7 +117,12 @@ SET LOC_ID = (SELECT LOC_ID FROM DEMO_LOC WHERE DEMO.D_ID = DEMO_LOC.LOC_ID);
 SELECT * FROM DEMO
     JOIN DEMO_LOC
     ON DEMO.LOC_ID = DEMO_LOC.LOC_ID;
-    
+
 -- 2.1.5 Add some columns for Perform Remove Operation in DEMO_LOC
 ALTER TABLE DEMO_LOC
     ADD COLUMN DEMO_TEMP_1 VARCHAR(20) UNIQUE;
+
+ALTER TABLE DEMO_LOC
+    ADD COLUMN DEMO_TEMP_2 VARCHAR(20);
+
+-- Note : For Other Constrints it's already used in first DEMO table
