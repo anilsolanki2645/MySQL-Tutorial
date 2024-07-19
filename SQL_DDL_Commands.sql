@@ -136,3 +136,9 @@ ALTER TABLE DEMO_LOC
 -- 2.2.2 Remove Column Constraints: (Remove Unique Constraints)
 ALTER TABLE DEMO_LOC
 DROP INDEX DEMO_TEMP_1;
+
+-- -------------------------------- (2.3) Modify -----------------------------------
+
+-- 2.3.1 Modify Column Data Type
+ALTER TABLE DEMO_LOC
+MODIFY COLUMN DEMO_TEMP_1 INT;
