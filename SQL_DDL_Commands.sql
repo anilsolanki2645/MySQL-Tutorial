@@ -161,3 +161,6 @@ DROP INDEX DEMO_TEMP_1;
 
 -- 3.1 Create a Duplicate table using Table AND Create one dummy database
 CREATE DATABASE DUMMY_DB;
+
+CREATE TABLE DUMMY_DEMO AS
+SELECT * FROM DEMO;
