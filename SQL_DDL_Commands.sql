@@ -158,3 +158,6 @@ DROP INDEX DEMO_TEMP_1;
 -- -------------------------------- [3] DROP COMMAND -------------------------------------
 
 -- NOTE : add one dummy table before drop it 
+
+-- 3.1 Create a Duplicate table using Table AND Create one dummy database
+CREATE DATABASE DUMMY_DB;
