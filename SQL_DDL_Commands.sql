@@ -180,3 +180,5 @@ DROP VIEW view_name;
 DROP PROCEDURE procedure_name;
 
 DROP FUNCTION function_name;
+
+DROP TRIGGER trigger_name;
