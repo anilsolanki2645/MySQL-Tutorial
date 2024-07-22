@@ -174,3 +174,5 @@ DROP DATABASE DUMMY_DB;
 -- 3.4 DROP SOME MORE 
 
 DROP INDEX index_name ON table_name;
+
+DROP VIEW view_name;
