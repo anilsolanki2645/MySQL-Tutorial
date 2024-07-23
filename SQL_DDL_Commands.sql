@@ -182,3 +182,5 @@ DROP PROCEDURE procedure_name;
 DROP FUNCTION function_name;
 
 DROP TRIGGER trigger_name;
+
+DROP USER user_name;
