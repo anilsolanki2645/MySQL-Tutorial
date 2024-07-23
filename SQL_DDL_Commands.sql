@@ -184,3 +184,5 @@ DROP FUNCTION function_name;
 DROP TRIGGER trigger_name;
 
 DROP USER user_name;
+
+-- -------------------------------- [4] TRUNCATE COMMAND -------------------------------------
