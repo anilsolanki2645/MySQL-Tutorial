@@ -23,3 +23,7 @@ SAVEPOINT my_savepoint;
 -- 3.1 RollBack to SavePoint
 
 BEGIN TRANSACTION;
+
+-- Execute SQL queries here
+
+SAVEPOINT my_savepoint;
