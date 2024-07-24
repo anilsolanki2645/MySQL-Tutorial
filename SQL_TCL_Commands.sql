@@ -27,3 +27,9 @@ BEGIN TRANSACTION;
 -- Execute SQL queries here
 
 SAVEPOINT my_savepoint;
+
+-- More SQL queries here
+
+ROLLBACK TO SAVEPOINT my_savepoint;
+
+COMMIT;
