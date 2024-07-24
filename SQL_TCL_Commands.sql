@@ -13,3 +13,9 @@ COMMIT;
 -- ROLLBACK: This command is used to undo all changes made during the current transaction.Example:
 
 ROLLBACK;
+
+-- -------------------------------- [3] SAVEPOINT COMMAND -------------------------------------
+
+-- SAVEPOINT: This command is used to set a named point within a transaction to which you can later roll back
+
+SAVEPOINT my_savepoint;
