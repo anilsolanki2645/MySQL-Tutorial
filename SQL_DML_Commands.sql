@@ -12,3 +12,6 @@ INSERT INTO employees (name, position, salary) VALUES ('John Doe', 'Manager', 60
 
 -- 1.3 UPDATE: Modifies existing data in a database table.
 UPDATE employees SET salary = 65000 WHERE name = 'John Doe';
+
+-- 1.4 DELETE: Removes data from a database table.
+DELETE FROM employees WHERE name = 'John Doe';
