@@ -36,3 +36,5 @@ CREATE TABLE employees (
 INSERT INTO employees (name, position, salary) VALUES ('Alice Smith', 'Developer', 55000);
 INSERT INTO employees (name, position, salary) VALUES ('Bob Johnson', 'Designer', 50000);
 
+-- 2.3 Selecting Data from the Table
+SELECT * FROM employees;
