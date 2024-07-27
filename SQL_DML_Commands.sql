@@ -32,4 +32,6 @@ CREATE TABLE employees (
     salary DECIMAL(10, 2)
 );
 
+-- 2.2 Inserting Data into the Table
+INSERT INTO employees (name, position, salary) VALUES ('Alice Smith', 'Developer', 55000);
 
