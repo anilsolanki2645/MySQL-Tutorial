@@ -32,13 +32,6 @@
         5. Give too much power to user.
 */
 
--- [5] Building Blocks of Store Procedures :
-/*      1. Procedure Name 
-        2. Parameters
-        3. Variables
-        4. SQL Statements
-        5. Procedure Call
-*/
 
 -- [6] Procedure Name:
 /*
