@@ -109,7 +109,14 @@
 
         DELIMITER ;
 
-        
+        -- Set or assign variable value
+        SET @total = 2;
+
+        -- call the procedure
+        CALL GetRecordCount(@total);
+
+        -- Final Output
+        SELECT @total;
 
 -- 8.3 Stored Procedure with an INOUT Parameter:
 
