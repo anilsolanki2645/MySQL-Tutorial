@@ -170,7 +170,8 @@
             -- Session Variable
             SET @session_var = 20;
 
-           
+            -- Update the session variable using the local variable
+            SET @session_var = @session_var + local_var;
 
             -- Select the variables to see their values
             SELECT local_var AS LocalVariable, @session_var AS SessionVariable;
