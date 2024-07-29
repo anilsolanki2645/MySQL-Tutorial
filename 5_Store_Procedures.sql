@@ -78,7 +78,72 @@
         --  you can call it using the CALL statement:
         CALL GetDemoRecords();
 
+-- [8] Stored Procedure with a Parameter:
+        
+        -- Stored procedures can have input parameters that allow you to pass values into the procedure at runtime.
 
+
+-- 8.2 Stored Procedure with an OUT Parameter:
+
+        DELIMITER //
+
+        DROP PROCEDURE IF EXISTS GetRecordCount;
+        CREATE PROCEDURE GetRecordCount(OUT total_records INT)
+        BEGIN
+            SELECT COUNT(*) INTO total_records FROM TEMP_DB.DEMO;
+        END //
+
+        DELIMITER ;
+
+        -- Set or assign variable value
+        SET @total = 2;
+
+        -- call the procedure
+        CALL GetRecordCount(@total);
+
+        -- Final Output
+        SELECT @total;
+
+-- 8.3 Stored Procedure with an INOUT Parameter:
+
+        DELIMITER //
+
+        DROP PROCEDURE IF EXISTS UpdateValue;
+        CREATE PROCEDURE UpdateValue(INOUT value INT)
+        BEGIN
+            SET value = value * 2;
+        END //
+
+        DELIMITER ;
+
+        -- Set or assign variable value
+        SET @value = 5;
+
+        -- call the procedure
+        CALL UpdateValue(@value);
+
+        -- Final Output
+        SELECT @value;
+
+-- [9] Session Variables and Local Variables in a Stored Procedure:
+
+/*
+        9.1. Local Variable (local_var):
+
+            - Declared with the DECLARE statement.
+            - Local to the procedure and exists only within the block of code where it is declared.
+            - Initialized with a default value of 10.
+
+        9.2. Session Variable (@session_var):
+
+            - Prefixed with @.
+            - Exists for the duration of the session and can be accessed across different procedures or queries within the same session.
+            - Initialized with a value of 20.
+
+        9.3. Using Local Variable to Update Session Variable:
+
+            - The session variable @session_var is updated by adding the value of the local variable local_var.
+*/
 
         DELIMITER //
 
