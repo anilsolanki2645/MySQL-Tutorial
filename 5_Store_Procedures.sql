@@ -255,7 +255,11 @@
         -- Calling the procedure
         CALL SelectDemoRecords();
 
+-- [11] Altering Stored Procedures
 
+        -- MySQL does not support an ALTER PROCEDURE statement. 
+
+        DROP PROCEDURE IF EXISTS TEMP_DB.SelectDemoRecords;
 
 -- [12] Listing Stored Procedures:
 
