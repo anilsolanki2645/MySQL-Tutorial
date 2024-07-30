@@ -273,14 +273,7 @@
 
 -- [13] Conditionals in Stored Procedures
 
--- 13.1 "REPLACE INTO" either inserts a new row or replaces an existing row if a duplicate key is found.
 
-        DELIMITER //
-
-        CREATE PROCEDURE ReplaceDemoRecord(IN record_id INT, IN new_name VARCHAR(100), IN new_value INT)
-        BEGIN
-            REPLACE INTO TEMP_DB.DEMO2 (id, name, value) VALUES (record_id, new_name, new_value);
-        END //
 
         DELIMITER ;
 
