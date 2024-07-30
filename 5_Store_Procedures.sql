@@ -319,18 +319,3 @@
         -- Calling the Procedure
         CALL UpdateIfExists(1, 'ronak');
 
--- 13.4 Checking if a Record Exists Before DELETE
-
-        DELIMITER //
-
-        CREATE PROCEDURE DeleteIfExists(IN record_id INT)
-        BEGIN
-            IF EXISTS (SELECT 1 FROM TEMP_DB.DEMO2 WHERE id = record_id) THEN
-                DELETE FROM TEMP_DB.DEMO2 WHERE id = record_id;
-            END IF;
-        END //
-
-        DELIMITER ;
-
-        -- Calling the Procedure
-        CALL DeleteIfExists(1);
