@@ -9,12 +9,7 @@
         They are similar to functions or methods in programming languages.
 */
 
--- [2] When to use Store Procedures (Advantages)?
-/*      1. Reduce network traffic
-        2. Centralize business logic in the database
-        3. Make the database more secure
-        4. MySQL looks it up in the database catalog, compiles the code, places it in the cache memory, and executes it.
-*/
+
 
 -- [3] Disadvantages of Store Procedures
 /*      1. Resource usage
