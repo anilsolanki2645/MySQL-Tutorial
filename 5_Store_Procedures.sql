@@ -40,6 +40,17 @@
         5. Procedure Call
 */
 
+-- [6] Procedure Name:
+/*
+        Every stored procedure has a unique name that identifies it within the database.
+
+
+        CREATE PROCEDURE Demo_Five_Records()
+        BEGIN
+            use TEMP_DB;
+            SELECT * FROM DEMO LIMIT 5;
+        END
+*/
 
 -- [7] stored procedure without a parameter:
 /*      
