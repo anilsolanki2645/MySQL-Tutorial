@@ -194,7 +194,15 @@
 
 -- 10.2 Stored Procedure with INSERT:
 
-        
+        DELIMITER //
+
+        DROP PROCEDURE IF EXISTS InsertDemoRecord;
+        CREATE PROCEDURE InsertDemoRecord(IN new_name VARCHAR(100), IN new_value INT)
+        BEGIN
+            INSERT INTO TEMP_DB.DEMO2 (name, value) VALUES (new_name, new_value);
+        END //
+
+        DELIMITER ;
 
         -- Calling the procedure
         CALL InsertDemoRecord('HARSHIL', 412);
