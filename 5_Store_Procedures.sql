@@ -212,13 +212,6 @@
 
 -- 10.3 Stored Procedure with UPDATE:
 
-        DELIMITER //
-
-        DROP PROCEDURE IF EXISTS UpdateDemoRecord;
-        CREATE PROCEDURE UpdateDemoRecord(IN record_id INT, IN new_name VARCHAR(100))
-        BEGIN
-            UPDATE TEMP_DB.DEMO2 SET name = new_name WHERE id = record_id;
-        END //
         
         DELIMITER ;
         
