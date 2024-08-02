@@ -204,7 +204,11 @@
 
         DELIMITER ;
 
-        
+        -- Calling the procedure
+        CALL InsertDemoRecord('HARSHIL', 412);
+        CALL InsertDemoRecord('ANIL', 132);
+        CALL InsertDemoRecord('KULDIP', 431);
+        CALL InsertDemoRecord('JAY', 452);
 
 -- 10.3 Stored Procedure with UPDATE:
 
