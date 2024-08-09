@@ -228,9 +228,7 @@
 
 -- [13] FLOOR()
 
-    -- Returns the largest integer value that is not greater than the passed numeric expression.
-    SELECT FLOOR(2.7);  -- Returns 2
-    SELECT FLOOR(-2.7); -- Returns -3
+    
 /*
 +------------+
 | FLOOR(2.7) |
