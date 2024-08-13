@@ -188,11 +188,6 @@
 |     3259397556 |
 +----------------+  */
 
--- [11] DEGREES()
-
-    -- Returns a numeric expression converted from radians to degrees.
-    SELECT DEGREES(PI());  -- Returns 180
-    SELECT DEGREES(PI()/2);  -- Returns 90
 
 /*
 +---------------+
