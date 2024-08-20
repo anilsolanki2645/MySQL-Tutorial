@@ -320,7 +320,24 @@
 |           3 |
 +-------------+     */
 
+-- [18] LOG2()
 
+    -- Returns the base-2 logarithm of the passed numeric expression.
+    SELECT LOG2(8);  -- Returns 3
+    SELECT LOG2(16); -- Returns 4
+
+/*
++---------+
+| LOG2(8) |
++---------+
+|       3 |
++---------+
+
++----------+
+| LOG2(16) |
++----------+
+|        4 |
++----------+    */
 
 -- [19] MOD()
 
