@@ -473,3 +473,21 @@
 |        4 |
 +----------+    */
 
+-- [26] TRUNCATE()
+
+    -- Returns the numeric expression truncated to the specified number of decimal places. If the number of decimal places is 0, the result will have no decimal point.
+    SELECT TRUNCATE(123.4567, 2);  -- Returns 123.45
+    SELECT TRUNCATE(123.4567, 0);  -- Returns 123
+
+/*
++-----------------------+
+| TRUNCATE(123.4567, 2) |
++-----------------------+
+|                123.45 |
++-----------------------+
+
++-----------------------+
+| TRUNCATE(123.4567, 0) |
++-----------------------+
+|                   123 |
++-----------------------+   */
