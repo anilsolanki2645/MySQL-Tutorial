@@ -379,54 +379,7 @@
     SELECT POWER(2, 3);  -- Returns 8
     SELECT POWER(5, 2);  -- Returns 25
 
-/*
-+-----------+
-| POW(2, 3) |
-+-----------+
-|         8 |
-+-----------+
-
-+-----------+
-| POW(5, 2) |
-+-----------+
-|        25 |
-+-----------+ 
-
-+-------------+
-| POWER(2, 3) |
-+-------------+
-|           8 |
-+-------------+     
-
-+-------------+
-| POWER(5, 2) |
-+-------------+
-|          25 |
-+-------------+     */
-
--- [22] RADIANS()
-
-    -- Returns the value of the passed expression converted from degrees to radians.   
-    SELECT RADIANS(180);  -- Returns 3.141593
-    SELECT RADIANS(90);   -- Returns 1.570796
-
-/*
-+-------------------+
-| RADIANS(180)      |
-+-------------------+
-| 3.141592653589793 |
-+-------------------+
-
-+--------------------+
-| RADIANS(90)        |
-+--------------------+
-| 1.5707963267948966 |
-+--------------------+      */
-
--- [23] RAND()
-
-    -- Returns a random floating-point value within the range 0 to 1.0.
-    SELECT RAND();  -- Returns a random number between 0 and 1, e.g., 0.123456
+Returns a random number between 0 and 1, e.g., 0.123456
     SELECT RAND(5); -- Returns a random number with seed 5
 
 /*
